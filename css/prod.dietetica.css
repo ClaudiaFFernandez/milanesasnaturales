@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/fondo.jpg);
+    font-family: 'Fjalla One', sans-serif;
+    background-size: 100%;
+
+}
+
+header {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header div {
+    display: flex;
+    height: 70px;
+    padding: 10px;
+    justify-content: space-between;
+    border-style: outset;
+
+
+}
+
+nav {
+    list-style: none;
+    text-align: center;
+
+
+}
+
+nav li {
+    text-decoration: none;
+    padding: 0%;
+    color: black;
+    display: block;
+    display: inline-flex;
+    text-align: center;
+    margin: 15px;
+}
+nav a:hover{
+    color: black
+}
+
+a {
+    text-decoration: none;
+}
+
+.galeria{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 5px;
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figure:nth-child(2){
+    grid-column-start: span 2;
+}
+
+figure:nth-child(4){
+    grid-template-rows: span 2;
+}
+
+figure:nth-child(8){
+    grid-column-start: span 2;
+}
+figure:nth-child(7){
+    grid-column-start: span 2;
+}
+figure:nth-child(11){
+    grid-column-start: span 3;
+}
+
+figure{
+    position: relative;
+}
+
+figcaption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: rgb(116, 121, 131);
+    background: rgb(168, 218, 201);
+    padding: 10px;
+}
+
+@media (min-width:768px){
+    .galeria{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    figure:nth-child(2){
+        grid-column-start: span 2;
+    }
+    figure:nth-child(4){
+        grid-column-start: span 2;
+    }
+    figure:nth-child(8){
+        grid-column-start: span 2;
+    }
+    figure:nth-child(6){
+        grid-column-start: span 2;
+    }
+    figure:nth-child(5){
+        grid-column-start: span 3;
+    }
+    figure:nth-child(10){
+        grid-column-start: span 3;
+    }
+}
+
+@media (min-width:1024px){
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    figure:nth-child(2){
+        grid-column-start: span 2;
+    }
+    figure:nth-child(4){
+        grid-column-start: span 1;
+    }
+    figure:nth-child(6){
+        grid-column-start: span 2;
+    }
+    figure:nth-child(8){
+        grid-column-start: span 2;
+    }
+    figure:nth-child(9){
+        grid-column-start: span 4;
+    }
+}
+
+footer {
+    width: 100%;
+    
+
+}
