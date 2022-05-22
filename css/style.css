@@ -9,55 +9,111 @@ body {
     background-image: url(../img/fondo.jpg);
     font-family: 'Fjalla One', sans-serif;
     background-size: 100%;
+    position: absolute;
 
 }
 
 header {
-    display: flex;
-    height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-header div {
-    display: flex;
-    height: 70px;
-    padding: 10px;
-    justify-content: space-between;
-    border-style: outset;
-
+    width: 100%;
 
 }
 
-nav {
+
+
+#btn-menu {
+    display: none;
+
+}
+
+label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #f1f1f1;
+}
+
+label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+
+}
+
+.menu ul {
+    margin: 0;
     list-style: none;
-    text-align: center;
+    padding: 0;
+    display: flex;
+    
 
 
 }
 
-nav li {
+.menu li:hover {
+    background: rgba(0, 0, 0, 0.3);
+
+
+}
+
+.menu li {
+    display: inline-block;
+    padding: 20px;
     text-decoration: none;
-    padding: 0%;
-    color: black;
-    display: block;
-    display: inline-flex;
-    text-align: center;
-    margin: 15px;
-}
-nav a:hover{
-    color: black
+
 }
 
 a {
     text-decoration: none;
+
 }
 
+.menu li {
+    border-right: 1px solid #e99696;
+
+}
+
+
+section {
+    display: flex;
+    height: 70px;
+    padding: 10px;
+   
+}
+
+main{
+    padding: 20px;
+}
+
+@media (max-width:768px) {
+    label{
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        background: rgb(224, 147, 147);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    
+    }
+    .menu li{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #f89494;
+    }
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+    
+}
+
+
+
 h2 {
-    font-family: 'Ms Madi', cursiva;
-    text-transform: uppercase;
+
     display: block;
+
 }
 
 h4 {
@@ -70,15 +126,79 @@ h4 {
 }
 
 
-nav {
-    padding: 10px 0px;
+
+.share-button {
+    width: 280px;
+    height: 80px;
+    background: #dfe6e9;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: .3s linear
 }
 
-footer {
+.share-button:hover {
+    transform: scale(1.1)
+}
+
+.share-button span {
+    position: absolute;
     width: 100%;
+    height: 100%;
+    background: #51b694;
+    color: #f1f1f1;
+    text-align: center;
+    line-height: 80px;
+    z-index: 999;
+    transition: .6s linear;
+    border-radius: 40px
 }
 
+.share-button:hover span {
+    transform: translateX(-100%);
+    transition-delay: .3s
+}
 
+.share-button a {
+    flex: 1;
+    font-size: 26px;
+    margin-right: 20px;
+    color: #3b554b;
+    text-align: center;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: .3s linear
+}
 
+.share-button:hover a {
+    opacity: 1;
+    transform: translateX(0)
+}
 
+.share-button a:nth-of-type(1) {
+    transition-delay: 1s
+}
 
+.share-button a:nth-of-type(2) {
+    transition-delay: .8s
+}
+
+.share-button a:nth-of-type(3) {
+    transition-delay: .6s
+}
+
+.share-button a:nth-of-type(4) {
+    transition-delay: .4s
+}
+
+@media (max-width:768px) {
+nav {
+    display:flow-root;
+
+}    
+}

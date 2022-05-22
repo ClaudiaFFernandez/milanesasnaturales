@@ -2,19 +2,27 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+    ">
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="../img/logo.jpg">
+        <section class="logo animate__animated animate__fadeInDown  ">
+            <img id="logo"  src="../img/logo.jpg">
 
             <h2>Milanesas Naturales</h2>
-        </div>
+        </section>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"> <img src="../img/icono menu.png" alt=""></label>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../pages/quienessomos.html"> Quienes somos </a> </li>
                 <li><a href="../pages/nuestroproducto.html">Nuestro Producto </a></li>
@@ -44,7 +52,12 @@
     <input type="submit">
     <hr>
     <footer>
-        <img src="../img/footer.jpg">
+        <div class="share-button">
+            <span>Contactate con Nosotras</span>
+            <a href="https:/facebook.com" target="_blank"><i class="fa fa-facebook-f"></i></a>
+            <a href="https:/whatsapp.com" target="blank"><i class="fa fa-whatsapp"></i></a>
+            <a href="https:/instagram.com" target="blank"><i class="fa fa-instagram"></i></a>
+        </div>
     </footer>
 </body>
 
