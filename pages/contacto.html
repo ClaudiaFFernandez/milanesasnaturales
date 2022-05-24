@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
@@ -15,20 +17,28 @@
 <body>
     <header>
         <section class="logo animate__animated animate__fadeInDown  ">
-            <img id="logo"  src="../img/logo.jpg">
+            <img id="logo" src="../img/logo.jpg">
 
             <h2>Milanesas Naturales</h2>
         </section>
-        <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"> <img src="../img/icono menu.png" alt=""></label>
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/quienessomos.html"> Quienes somos </a> </li>
-                <li><a href="../pages/nuestroproducto.html">Nuestro Producto </a></li>
-                <li> <a href="../pages/Proddietetica.html">Productos de Dietetica </a></li>
-                <li><a href="../pages/contacto.html"> contacto </a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="../index.html">Inicio</a></li>
+                        <a class="nav-link active" href="../pages/quienessomos.html"> Quienes somos </a> </li>
+                        <a class="nav-link active" href="../pages/nuestroproducto.html">Nuestro Producto </a></li>
+                        <a class="nav-link active" href="../pages/Proddietetica.html">Productos de Dietetica </a></li>
+                        <a class="nav-link active" href="../pages/contacto.html"> contacto </a></li>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -45,11 +55,10 @@
         <hr>
     </form>
     <hr>
-    <p> Dejanos tu comentario</p>
-    <textarea name="" id="10" cols="20" rows="20"></textarea>
+    <p><strong>Dejanos tu comentario</strong> </p>
+    <textarea name="" cols="50" rows="10"></textarea>
     <hr>
-    <input type="reset">
-    <input type="submit">
+    <button type="button" class="btn btn-outline-secondary">Enviar</button>
     <hr>
     <footer>
         <div class="share-button">
@@ -59,6 +68,9 @@
             <a href="https:/instagram.com" target="blank"><i class="fa fa-instagram"></i></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
