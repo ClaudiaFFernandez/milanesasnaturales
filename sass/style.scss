@@ -1,0 +1,112 @@
+@import "variables";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-image: url(../img/fondo.jpg);
+	font-family: 'Fjalla One', sans-serif;
+	background-size: 100%;
+	position: absolute;
+	text-align: center;
+}
+main {
+	padding: 20px;
+	p {
+		background-color: burlywood;
+		border: 2px solid $color-primario;
+	}
+}
+h4 {
+	font-family: 'Ms Madi', cursiva;
+	font-size: 25px;
+	border: outset;
+	border-bottom: solid 5px #b1f0b1;
+	text-align: center;
+	text-transform: capitalize;
+}
+.col {
+	.card {
+		background-color: #6f9b9b;
+		.card-body {
+			font-family: fantasy;
+		}
+	
+	}
+}
+
+@media (max-width:767px) {
+	.col{
+		
+		.card{
+			background-color: darkorange;
+			width: 150px;
+			margin-left: 200px;
+			
+	}
+    
+}}
+
+
+
+.share-button {
+	width: 280px;
+	height: 80px;
+	background: rgb(241, 64, 72);
+	border-radius: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 50px;
+	overflow: hidden;
+	position: absolute;
+	cursor: pointer;
+	transition: .3s linear;
+	span {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: $color-primario;
+		color: #f1f1f1;
+		text-align: center;
+		line-height: 80px;
+		z-index: 999;
+		transition: .6s linear;
+		border-radius: 40px;
+	}
+	&:hover {
+		span {
+			transform: translateX(-100%);
+			transition-delay: .3s;
+		}
+		a {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+	a {
+		flex: 1;
+		font-size: 26px;
+		margin-right: 20px;
+		color: $color-primario;
+		text-align: center;
+		transform: translateX(-100%);
+		opacity: 0;
+		transition: .3s linear;
+		&:nth-of-type(1) {
+			transition-delay: 1s;
+		}
+		&:nth-of-type(2) {
+			transition-delay: .8s;
+		}
+		&:nth-of-type(3) {
+			transition-delay: .6s;
+		}
+		&:nth-of-type(4) {
+			transition-delay: .4s;
+		}
+	}
+}
+
