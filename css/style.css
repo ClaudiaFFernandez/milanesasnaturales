@@ -5,21 +5,21 @@
 
 body {
   background-image: url(../img/fondo.jpg);
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   background-size: 100%;
   text-align: center; }
 
 h1 {
-  font-family: 'Ms Madi', cursiva; }
+  font-family: "Ms Madi", cursiva; }
 
 main {
   padding: 20px; }
   main p {
     font-size: 20px;
-    font-family: 'Ms Madi', cursiva; }
+    font-family: "Ms Madi", cursiva; }
 
 h4 {
-  font-family: 'Ms Madi', cursiva;
+  font-family: "Ms Madi", cursiva;
   font-size: 25px;
   border: outset;
   border-bottom: solid 5px #b1f0b1;
@@ -27,11 +27,11 @@ h4 {
   text-transform: capitalize; }
 
 pre {
-  font-family: 'Ms Madi', cursiva;
+  font-family: "Ms Madi", cursiva;
   font-size: 20px; }
 
 .contenedor {
-  font-family: 'Ms Madi', cursiva;
+  font-family: "Ms Madi", cursiva;
   font-size: 20px;
   display: grid;
   -ms-grid-columns: 47% 47%;

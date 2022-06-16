@@ -1,4 +1,5 @@
 @import "variables";
+@import "fuentes";
 
 * {
 	margin: 0;
@@ -8,14 +9,14 @@
 
 body {
 	background-image: url(../img/fondo.jpg);
-	font-family: 'Fjalla One', sans-serif;
+	font-family: $fuente-primaria ;
 	background-size: 100%;
 	text-align: center;
 }
 
 h1{
 
-		font-family: 'Ms Madi', cursiva;
+		font-family: $fuente-secundaria;
 }
 main {
 	padding: 20px;
@@ -23,8 +24,7 @@ main {
 	p {
 		
 		font-size: 20px;
-		font-family: 'Ms Madi', cursiva;
-		
+		font-family: $fuente-secundaria;
 		
 	}
 }
@@ -32,7 +32,7 @@ main {
 
 
 h4 {
-	font-family: 'Ms Madi', cursiva;
+	font-family: $fuente-secundaria;
 	font-size: 25px;
 	border: outset;
 	border-bottom: solid 5px #b1f0b1;
@@ -41,12 +41,12 @@ h4 {
 }
 
 pre {
-	font-family: 'Ms Madi', cursiva;
+	font-family: $fuente-secundaria;
 	font-size: 20px;
 
 }
 .contenedor {
-	font-family: 'Ms Madi', cursiva;
+	font-family: $fuente-secundaria;
 	font-size: 20px;
 	display: grid;
 	-ms-grid-columns: 47% 47%;
